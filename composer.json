@@ -1,0 +1,28 @@
+{
+    "name": "kisscool-fr/simple-haveibeenpwned",
+    "description": "A very simple class to check your password safety against 'Have I Been Pwned' API.",
+    "homepage": "https://github.com/kisscool-fr/simple-haveibeenpwned",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KisSCoOl",
+            "email": "kisscool@kisscool.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HIBP\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^7.5",
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpstan/phpstan": "^0.11.2"
+    }
+}
