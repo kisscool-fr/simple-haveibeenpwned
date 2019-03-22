@@ -5,10 +5,10 @@ CSFIXER = ./vendor/bin/php-cs-fixer
 PHPSTAN = ./vendor/bin/phpstan
 
 stan:
-	$(PHPSTAN) analyse --level=max src
+	$(PHPSTAN) analyse --configuration=phpstan.neon
 
 style:
-	$(CSFIXER) fix src --diff-format=udiff --dry-run --diff
+	$(CSFIXER) fix src --dry-run --diff-format=udiff --diff
 
 test:
 	$(PHPUNIT)
