@@ -1,5 +1,5 @@
 {
-    "name": "kisscool-fr/simple-haveibeenpwned",
+    "name": "kisscool/simple-haveibeenpwned",
     "description": "A very simple class to check your password safety against 'Have I Been Pwned' API.",
     "homepage": "https://github.com/kisscool-fr/simple-haveibeenpwned",
     "license": "MIT",
