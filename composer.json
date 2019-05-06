@@ -10,19 +10,31 @@
             "role": "Developer"
         }
     ],
+    "config": {
+        "platform": {
+            "php": "7.1"
+        },
+        "sort-packages": true
+    },    
     "autoload": {
         "psr-4": {
             "HIBP\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "HIBP\\": "tests/"
+        }
+    },    
     "require": {
         "php": "^7.1",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "hirak/prestissimo": "^0.3.9"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
         "phpunit/phpunit": "^7.5",
-        "friendsofphp/php-cs-fixer": "^2.14",
-        "phpstan/phpstan": "^0.11.4"
+        "friendsofphp/php-cs-fixer": "^2.15",
+        "phpstan/phpstan": "^0.11"
     }
 }
