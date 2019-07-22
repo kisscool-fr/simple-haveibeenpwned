@@ -21,7 +21,10 @@ class SimpleHIBP
 
             if (is_null(self::$client)) {
                 self::$client = new Client([
-                    'base_uri' => self::API_ENDPOINT
+                    'base_uri' => self::API_ENDPOINT,
+                    'headers' => [
+                        'User-Agent' => __CLASS__
+                    ]
                 ]);
             }
 
